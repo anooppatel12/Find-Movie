@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('https://images.unsplash.com/photo-1515273007315-85b72f45f6d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg3NzZ8MHwxfGFsbHwxfHx8fHx8fHwxNjA1MDI1NDA2&ixlib=rb-1.2.1&q=80&w=1080'); /* Main background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .App {
+    color: white;
+    text-align: center;
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .form-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   }
-}
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px; 
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff6b81;
+  }
+  
+  .loading, .error {
+    margin: 20px 0;
+  }
+  
+  .movie-details {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .movie-title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .movie-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .tagline-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Add multiple icons and images */
+  .icon-background {
+    background-image: url('https://img.icons8.com/ios-filled/50/FFFFFF/clapperboard.png'), /* Movie Clapper */
+                      url('https://img.icons8.com/?size=60&id=IrLeaYkDsDWy&format=png'), /* Popcorn */
+                      url('https://img.icons8.com/ios-filled/50/FFFFFF/film-reel.png'); /* Film Reel */
+    background-repeat: no-repeat;
+    background-size: 50px 50px; 
+    background-position: top left, top right, bottom left; 
+    opacity: 0.1; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+  }
+  
